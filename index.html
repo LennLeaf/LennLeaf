@@ -1,133 +1,151 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Lenn's Nekoweb Page!</title>
-		<style>
-			body {
-			    font-family: 'Arial', sans-serif; /* Clean, friendly font */
-			    margin: 0;
-			    background-color: #e0f2f7; /* Light blue background - will be overridden by image */
-			    color: #212121; /* Dark gray text */
-			    line-height: 1.4;
-			    text-align: center; /* Center content */
-			    /* Background Image */
-			    background-image: url("pattern 559.gif"); /* Replace with your image URL or file */
-			    background-size: cover; /* Cover the entire background */
-			    background-repeat: no-repeat;
-			    background-attachment: fixed; /* Keep background fixed during scroll */
-			}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenn's Nekoweb Page!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, playful font */
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
+            line-height: 1.6;
+            text-align: center;
+            background-image: url("pattern 559.gif"); /* Keep your background */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden; /* Prevents horizontal scroll from background */
+        }
 
-			a {
-			    color: #0077cc; /* Blue links */
-			    text-decoration: none;
-			}
+        a {
+            color: #ff69b4; /* Hot pink links */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
 
-			a:hover {
-			    text-decoration: underline;
-			}
+        a:hover {
+            text-decoration: underline;
+            color: #d9004f; /* Darker pink on hover */
+        }
 
-			img {
-			    max-width: 300px; /* Adjust as needed */
-			    height: auto;
-			    border: 2px solid #fff; /* White border */
-			    margin: 10px;
-			    border-radius: 8px; /* Rounded corners */
-			}
+        img {
+            max-width: 300px;
+            height: auto;
+            border: 4px double #ff69b4; /* Double hot pink border */
+            margin: 20px;
+            border-radius: 15px; /* More rounded corners */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+            transition: transform 0.2s ease; /* Smooth transform transition */
+        }
 
-			hr {
-			    border: 1px solid #fff;
-			    margin: 20px 0;
-			}
+        img:hover {
+            transform: scale(1.1); /* Slightly enlarge image on hover */
+        }
 
-			section {
-			    padding: 20px;
-			    margin: 20px auto; /* Center the sections */
-			    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-			    border: 2px solid #00bcd4; /* Teal border */
-			    border-radius: 10px;
-			    max-width: 80%; /* Limit section width */
-			    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-			}
+        hr {
+            border: 2px dashed #ff69b4; /* Dashed hot pink line */
+            margin: 30px 0;
+            width: 70%; /* Make the line a bit shorter */
+        }
 
-			h1, h2 {
-			    color: #00bcd4; /* Teal headings */
-			}
+        section {
+            padding: 30px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+            border: 4px solid #ff69b4; /* Hot pink border */
+            border-radius: 15px;
+            max-width: 85%;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition for hover effect */
+        }
 
-			ul {
-			    list-style-type: disc;
-			    text-align: left;
-			    margin-left: 20px;
-			}
+        section:hover {
+            transform: translateY(-5px); /* Move section up slightly on hover */
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+        }
 
-			/* Footer */
-			footer {
-			    background-color: #00bcd4; /* Teal footer */
-			    color: #fff;
-			    padding: 10px;
-			    text-align: center;
-			    /* Sticky Footer Technique */
-			    position: relative;
-			    bottom: 0;
-			    width: 100%;
-			    margin-top: 20px; /* Space above footer */
-			    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2); /* Shadow on top */
-			}
+        h1, h2 {
+            color: #ff69b4; /* Hot pink headings */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow */
+        }
 
-			/* Add padding to the bottom of the body to prevent content from being hidden under the footer */
-			body {
-			    padding-bottom: 60px; /* Adjust as needed */
-			}
-		</style>
-	</head>
-	<body>
-		<h1>Welcome to My Fun Site!</h1>
+        ul {
+            list-style-type: square; /* Square bullet points */
+            text-align: left;
+            margin-left: 30px;
+        }
 
-		<section id="about">
-			<img src="LennLeaf.jpeg" alt="PFP" />
-			<h2>About Me</h2>
-			<p>
-				Hey there! I'm Lenn. I'm totally into Kingdom Hearts, YuGiOh,
-				Minecraft, Fortnite, and more! I love video games as much as the
-				next guy. This is my totally awesome site, so make yourself at
-				home!
-			</p>
-		</section>
+        li {
+            margin-bottom: 10px; /* Add space between list items */
+        }
 
-		<section id="Cards">
-			<h2>Cards</h2>
-			<ul>
-				<li>
-					<a href="https://gravatar.com/lennleaf.card">
-						Gravatar (if anyone uses it!)
-					</a>
-				</li>
-				<li>
-					<a href="https://lennleaf.carrd.co/">
-						Carrd (if you use it!)
-					</a>
-				</li>
-				<li><a href="your_other_social_link">Other Social Link</a></li>
-			</ul>
-		</section>
+        footer {
+            background-color: #ff69b4; /* Hot pink footer */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+            font-weight: bold; /* Make the footer text bold */
+        }
 
-		<section id="contact">
-			<h2>Contact Me</h2>
-			<p>
-				Email:
-				<a href="mailto:your.email@example.com">
-					your.email@example.com
-				</a>
-			</p>
-			<p>
-				You can also find me on
-				<a href="your_social_link">Social Media</a>
-			</p>
-		</section>
+        body {
+            padding-bottom: 70px; /* Adjust for footer */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Fun Site!</h1>
 
-		<footer>
-			<p>&copy; 2024 Lenn</p>
-		</footer>
-	</body>
+    <section id="about">
+        <img src="LennLeaf.jpeg" alt="PFP" />
+        <h2>About Me</h2>
+        <p>
+            Hey there! I'm Lenn. I'm totally into Kingdom Hearts, YuGiOh,
+            Minecraft, Fortnite, and more! I love video games as much as the
+            next guy. This is my totally awesome site, so make yourself at
+            home!
+        </p>
+    </section>
+
+    <section id="Cards">
+        <h2>Cards</h2>
+        <ul>
+            <li>
+                <a href="https://gravatar.com/lennleaf.card">
+                    Gravatar (if anyone uses it!)
+                </a>
+            </li>
+            <li>
+                <a href="https://lennleaf.carrd.co/">
+                    Carrd (if you use it!)
+                </a>
+            </li>
+            <li><a href="your_other_social_link">Other Social Link</a></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            Email:
+            <a href="mailto:your.email@example.com">
+                your.email@example.com
+            </a>
+        </p>
+        <p>
+            You can also find me on
+            <a href="your_social_link">Social Media</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lenn</p>
+    </footer>
+</body>
 </html>
